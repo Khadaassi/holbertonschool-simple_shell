@@ -68,11 +68,20 @@ Username@your-regular-prompt:~$
 ```
 Username@your-regular-prompt:~$ ./hsh
 $ ls -l /tmp 
--rw------- 1 username username    0 Dec  5 12:09 config-err-aAMZrR
-drwx------ 3 root   root   4096 Dec  5 12:09 systemd-private-062a0eca7f2a44349733e78cb4abdff4-colord.service-V7DUzr
-drwx------ 3 root   root   4096 Dec  5 12:09 systemd-private-062a0eca7f2a44349733e78cb4abdff4-rtkit-daemon.service-ANGvoV
-drwx------ 3 root   root   4096 Dec  5 12:07 systemd-private-062a0eca7f2a44349733e78cb4abdff4-systemd-timesyncd.service-CdXUtH
--rw-rw-r-- 1 username username    0 Dec  5 12:09 unity_support_test.0
+total 60
+drwxr-xr-x 2 root   root    4096 Dec  8 04:31 build-features-src
+drwxr-xr-x 1 root   root    4096 Dec  8 04:31 dev-container-features
+drwxr-xr-x 2 vscode vscode  4096 Dec 22 08:36 devcontainers-af4a5850-be4f-4b35-a05e-60442e0adab71703234170191
+srwxr-xr-x 1 vscode vscode     0 Dec 22 08:52 git-graph-askpass-IbIv3BCvJRRyIIZFQxEfDaihrb1aUOqI.sock
+srwxr-xr-x 1 vscode vscode     0 Dec 22 08:36 vscode-git-ae6383ccd7.sock
+srwxr-xr-x 1 vscode vscode     0 Dec 22 09:32 vscode-ipc-0b2ff3ca-fe4d-495c-bbe3-05487e99f5dd.sock
+srwxr-xr-x 1 vscode vscode     0 Dec 22 08:36 vscode-ipc-1c2d5719-35a0-4f13-bbdd-c16e96019e1f.sock
+srwxr-xr-x 1 vscode vscode     0 Dec 22 09:34 vscode-ipc-b3ebef13-b23d-492e-a7b0-e38601b488ce.sock
+srwxr-xr-x 1 vscode vscode     0 Dec 22 08:36 vscode-ipc-c1ad2bb3-dc88-4462-967a-293068cfd376.sock
+-rw-r--r-- 1 vscode vscode  2071 Dec 22 08:36 vscode-remote-containers-be8bcfda-2464-4bf3-8e93-684e9a58b35d.js
+srwxr-xr-x 1 vscode vscode     0 Dec 22 08:36 vscode-remote-containers-ipc-be8bcfda-2464-4bf3-8e93-684e9a58b35d.sock
+-rw-r--r-- 1 vscode vscode 42296 Dec 22 08:36 vscode-remote-containers-server-be8bcfda-2464-4bf3-8e93-684e9a58b35d.js
+srwxr-xr-x 1 vscode vscode     0 Dec 22 08:36 vscode-ssh-auth-be8bcfda-2464-4bf3-8e93-684e9a58b35d.sock
 $ ^D
 Username@your-regular-prompt:~$
 ```
