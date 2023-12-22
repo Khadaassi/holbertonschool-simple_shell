@@ -26,6 +26,8 @@ It wil then display a simple prompt and wait for commands.
 `$ `   
 A command will be of the type `$ command`  
 This shell can handle two types of commands: builtins and normal program.
+### Flowchart
+![Image](https://i.imgur.com/8ibJlBg.png)
 ##### List of built-ins
 
 Switch to the specified directory (path).
