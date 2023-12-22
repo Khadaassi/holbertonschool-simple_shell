@@ -45,5 +45,5 @@ int main(int argc, char **argv)
 	}
 	/*Free allocated memory*/
 	free(input);
-	return (0); // Return success
+	return (0);
 }
