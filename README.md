@@ -3,7 +3,7 @@
 # Simple Shell
 
 ### Introduction
-This repository is a [Holberton School](https://www.holbertonschool.com/) Project. The school project consisted in writing a shell like sh (Bourne Shell) by Stephen Bourne  , in **C**, using a limited number of standard library functions, So Instead we used ower own function that we rewrited over the past three month [Here](https://github.com/Theemiss/holbertonschool-low_level_programming/)
+This repository is a [Holberton School](https://www.holbertonschool.com/) Project. The school project consisted in writing a shell like sh (Bourne Shell) by Stephen Bourne  , in **C**, using a limited number of standard library functions.
 
 The goal in this project was to make us understand how a shell works. To single out some items: what is the *environment*, the difference between *functions* and *system calls*, how to create *processes* using `execve`...  
 
@@ -12,12 +12,12 @@ In order to run this program,
 
 Clone This Repo
 
-`` git clone https://github.com/Theemiss/simple_shell ``
+`` git clone https://github.com/Khadaassi/holbertonschool-simple_shell ``
 
 compile it with  
 
 `gcc 4.8.4 -Wall -Werror -Wextra -pedantic *.c -o hsh`.  
-You can then run it by invoking `./hsh` in that same directory.  
+You can then run it by typing `./hsh` in that same directory.  
 
 ### How to use it
 In order to use this shell, in a terminal, first run the program:    
@@ -27,21 +27,12 @@ It wil then display a simple prompt and wait for commands.
 A command will be of the type `$ command`  
 This shell can handle two types of commands: builtins and normal program.
 ##### List of built-ins
-Currently the list of built-ins I wrote is:  
-* cd [directory]  
+
 Switch to the specified directory (path).
 * env  
 Displays the environment variable
 * exit [exitstatus]  
-Exit from the program with exitstatus value. 0 by default.
-* getenv NAME  
-Return the value of the NAME variable if it is in the environment
-* help [command]  
-Displays the syntax for the command, or all commands.  
-* history  
-Displays the last typed user .
-* echo [$$] or [$?] or [$PATH]
-Return pid and exit statue and PATH.
+Exit from the program with exitstatus value. 0 by default.  
 ##### Command
 Basicly Every Program in `$PATH`
 It Support Single Word like `ls` 
@@ -61,7 +52,7 @@ it Handle Comments **#**
 Username@your-regular-prompt:~$ ./hsh
 $ pwd
 /home/username/
-$ ^D
+$ exit
 Username@your-regular-prompt:~$
 ```
 **Example 2**
@@ -82,7 +73,7 @@ srwxr-xr-x 1 vscode vscode     0 Dec 22 08:36 vscode-ipc-c1ad2bb3-dc88-4462-967a
 srwxr-xr-x 1 vscode vscode     0 Dec 22 08:36 vscode-remote-containers-ipc-be8bcfda-2464-4bf3-8e93-684e9a58b35d.sock
 -rw-r--r-- 1 vscode vscode 42296 Dec 22 08:36 vscode-remote-containers-server-be8bcfda-2464-4bf3-8e93-684e9a58b35d.js
 srwxr-xr-x 1 vscode vscode     0 Dec 22 08:36 vscode-ssh-auth-be8bcfda-2464-4bf3-8e93-684e9a58b35d.sock
-$ ^D
+$ exit
 Username@your-regular-prompt:~$
 ```
 ### Exemples Builtin
