@@ -8,11 +8,16 @@
 #include <sys/wait.h>
 #include <sys/types.h>
 #include <ctype.h>
+
 extern char **environ;
-/* execute_commands.c */
-int execute_command(char *input);
+
+/*Prototypes*/
+
 char *get_executable_path(char *executablename);
 char **splitter(char *input);
 char *remove_whitespace(char *input);
+/*In execute.c file */
 void free_allocated_memory(char **args, char *path);
+int execute_command(char *input);
+
 #endif
