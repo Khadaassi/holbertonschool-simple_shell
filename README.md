@@ -85,46 +85,43 @@ srwxr-xr-x 1 vscode vscode     0 Dec 22 08:36 vscode-ssh-auth-be8bcfda-2464-4bf3
 $ ^D
 Username@your-regular-prompt:~$
 ```
-### Exmples Builtin
+### Exemples Builtin
 
 **case env and exit**
 ```
 Username@your-regular-prompt:~$ ./hsh
-USER=julien
-LANGUAGE=en_US
-SESSION=ubuntu
-COMPIZ_CONFIG_PROFILE=ubuntu
-SHLVL=1
-HOME=/home/julien
-C_IS=Fun_:)
-DESKTOP_SESSION=ubuntu
-LOGNAME=julien
+SHELL=/bin/bash
+COLORTERM=truecolor
+TERM_PROGRAM_VERSION=1.85.1
+HOSTNAME=b387a11db55c
+SSH_AUTH_SOCK=/tmp/vscode-ssh-auth-be8bcfda-2464-4bf3-8e93-684e9a58b35d.sock
+REMOTE_CONTAINERS_IPC=/tmp/vscode-remote-containers-ipc-be8bcfda-2464-4bf3-8e93-684e9a58b35d.sock
+PWD=/workspaces/holbertonschool-simple_shell
+VSCODE_GIT_ASKPASS_NODE=/vscode/vscode-server/bin/linux-x64/0ee08df0cf4527e40edc9aa28f4b5bd38bbff2b2/node
+HOME=/home/vscode
+LANG=en_US.UTF-8
+LS_COLORS=rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:
+REMOTE_CONTAINERS=true
+GIT_ASKPASS=/vscode/vscode-server/bin/linux-x64/0ee08df0cf4527e40edc9aa28f4b5bd38bbff2b2/extensions/git/dist/askpass.sh
+VSCODE_GIT_ASKPASS_EXTRA_ARGS=
+LESSCLOSE=/usr/bin/lesspipe %s %s
 TERM=xterm-256color
-PATH=/home/julien/bin:/home/julien/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin
-DISPLAY=:0
+REMOTE_CONTAINERS_SOCKETS=["/tmp/vscode-ssh-auth-be8bcfda-2464-4bf3-8e93-684e9a58b35d.sock"]
+LESSOPEN=| /usr/bin/lesspipe %s
+USER=vscode
+VSCODE_GIT_IPC_HANDLE=/tmp/vscode-git-ae6383ccd7.sock
+SHLVL=2
+GIT_EDITOR=code --wait
+PROMPT_DIRTRIM=4
+VSCODE_GIT_ASKPASS_MAIN=/vscode/vscode-server/bin/linux-x64/0ee08df0cf4527e40edc9aa28f4b5bd38bbff2b2/extensions/git/dist/askpass-main.js
+BROWSER=/vscode/vscode-server/bin/linux-x64/0ee08df0cf4527e40edc9aa28f4b5bd38bbff2b2/bin/helpers/browser.sh
+PATH=/vscode/vscode-server/bin/linux-x64/0ee08df0cf4527e40edc9aa28f4b5bd38bbff2b2/bin/remote-cli:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/home/vscode/.local/bin
+TERM_PROGRAM=vscode
+VSCODE_IPC_HOOK_CLI=/tmp/vscode-ipc-b3ebef13-b23d-492e-a7b0-e38601b488ce.sock
 $ exit
 Username@your-regular-prompt:~$ 
 
 ```
-**Case Exit Statue**
-```
-Username@your-regular-prompt:~$ ./hsh
-$ exit 98
-Username@your-regular-prompt:~$ echo $?
-98
-Username@your-regular-prompt:~$
-
-```
-Keep Exploring The echo Builtin and history ... Using The Help Builtin
-
-### Also
-* Handle Ctrl+C: your shell should not quit when the user inputs ^C
-* If no argument is given to cd the command must be interpreted like cd $HOME
-* handle the command cd -
-* Handle variables replacement
-* Handle the $? variable
-* Handle the $$ variable
-* Handle The Argument file like `./hsh test` Where test is a file filled with command and builtin to excute.
 ### List of functions and system calls we could use
 List of allowed functions and system calls
 
@@ -156,40 +153,13 @@ List of allowed functions and system calls
     wait4 (man 2 wait4)
     write (man 2 write)
     _exit (man 2 _exit)
-### Custom Function (Recreation of Standard Function in C)
- * _strncpy
- * _strlen
- * _putchar
- * _atoi
- * _puts
- * _strcmp
- * _isalpha
- * array_rev
- * intlen
- * _itoa
- * _strcat
- * _strcpy
- * _strchr
- * _strncmp
- * _strdup
- * _memcpy
- * _calloc
- * _realloc
- * _getenv
- * _getline
- * _strtok
 
 For More Info About It Check The Man Page by
 ```
 Username@your-regular-prompt:~$ man ./man_1_simple_shell
 ```
-Project Done in 15 Day
+Project Done in 12 Days
 
-Read More [Here](https://midinfotn401.medium.com/shell-step-by-step-what-happen-when-you-type-ls-l-in-the-shell-83d655712332)
 ## Authors
 * Khadija Aassi [Khadaassi](https://github.com/Khadaassi)
 * Nathan Vertueux [Nathan9722](https://github.com/Nathan9722)
-
-<p align="center">
-  <img src="http://www.holbertonschool.com/holberton-logo.png" alt="Holberton School logo">
-</p>
