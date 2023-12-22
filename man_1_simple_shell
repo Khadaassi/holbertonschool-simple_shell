@@ -33,7 +33,7 @@ may be invoked with the same functionality in
 .I interactive 
 or 
 .I non-interactive 
-mode.  The user may quit the program by typing "exit", "Ctrl + D",  on the command line.
+mode.  The user may quit the program by typing "exit" or "Ctrl + D",  on the command line.
 When the program quits or a command has been executed, 
 .B simple shell 
 returns with a new prompt: "$ "
@@ -41,17 +41,15 @@ returns with a new prompt: "$ "
 .B Example
 .IP
 
-$./hsh
+Username@your-regular-prompt:~$ ./hsh
 
-$pwd
+$ pwd
 
-Username@your-regular-prompt:~$
-
-$
+Username@your-regular-prompt
 
 $/bin/pwd
 
-Username@your-regular-prompt:~$
+Username@your-regular-prompt
 $
 
 .SH RESERVED WORDS
@@ -66,7 +64,7 @@ The commands
 .B exit
 ,
 .B env
-,
+
 .B help
 and
 .B echo
