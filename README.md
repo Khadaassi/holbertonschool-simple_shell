@@ -1,3 +1,5 @@
+![image](https://camo.githubusercontent.com/53e388ccefde9c9b8cf54cac98852e1000a2b2a861a10fe8c755ffe1ffe0fd64/68747470733a2f2f6170706c792e686f6c626572746f6e7363686f6f6c2e636f6d2f686f6c626572746f6e2d6c6f676f2e706e67)
+
 # Simple Shell
 
 ### Introduction
@@ -176,7 +178,8 @@ Project Done in 15 Day
 
 Read More [Here](https://midinfotn401.medium.com/shell-step-by-step-what-happen-when-you-type-ls-l-in-the-shell-83d655712332)
 ## Authors
-* Ahmed Belhaj [Theemiss](https://github.com/Theemiss)
+* Khadija Aassi [Khadaassi](https://github.com/Khadaassi)
+* Nathan Vertueux [Nathan9722](https://github.com/Nathan9722)
 
 <p align="center">
   <img src="http://www.holbertonschool.com/holberton-logo.png" alt="Holberton School logo">
