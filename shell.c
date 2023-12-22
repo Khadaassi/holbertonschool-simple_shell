@@ -18,7 +18,7 @@ int main(int argc, char **argv)
 		printf("Usage: %s\n", argv[0]);
 		return (EXIT_FAILURE);
 	}
-	/*Loop to continuously read input*/ 
+	/*Loop to continuously read input*/
 	while (1)
 	{
 		/*Display the shell prompt if input is from terminal*/
