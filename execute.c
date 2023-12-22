@@ -1,9 +1,9 @@
 #include "shell.h"
 
 /**
- * free_memory - frees memory
- * @arguments: arguments
- * @path: path of command
+ * free_memory - frees memory of arguments and path
+ * @arguments: arguments of command
+ * @path: path of command to be executed
  * Return: void
  */
 void free_memory(char **arguments, char *path)
@@ -13,24 +13,25 @@ void free_memory(char **arguments, char *path)
 }
 
 /**
- * execute_command - Executes a command
+ * execute_command - Executes a command in the shell
  * @user_input: Input to be executed
  * Return: 1 on success, -1 on failure
  */
 int execute_command(char *user_input)
 {
-	int status, execution;
-	char *path, **arguments;
-	pid_t process_id;
+	int status;	/* Status of child process */
+	int execution;	/* Execution of execve */
+	char *path, **arguments;	/* Path of command and arguments */
+	pid_t process_id;	/* child Process ID */
 
-	arguments = splitter(user_input);
-	if (arguments == NULL)
+	arguments = splitter(user_input);	/* Split user input into arguments */
+	if (arguments == NULL)	/* If splitter fails */
 		return (-1);
 	
-	if (user_input[0] == '/' || user_input[0] == '.')
+	if (user_input[0] == '/' || user_input[0] == '.')	/* If user input is a path */
 		path = strdup(user_input);
 	else
-		path = get_executable_path(arguments[0]);
+		path = get_executable_path(arguments[0]);	/* Get path of command */
 	
 	if (path == NULL)
 	{
@@ -38,7 +39,7 @@ int execute_command(char *user_input)
 		return (-1);
 	}
 
-	process_id = fork();
+	process_id = fork();	/* Create child process */
 
 	if (process_id < 0)
 	{
@@ -47,9 +48,9 @@ int execute_command(char *user_input)
 	}
 	else if (process_id == 0)
 	{
-		execution = execve(path, arguments, environ);
+		execution = execve(path, arguments, environ);	/* Execute command */
 		
-		if (execution < 0)
+		if (execution < 0)	/* If execve fails */
 		{
 			free_memory(arguments, path);
 			return (-1);
@@ -59,7 +60,7 @@ int execute_command(char *user_input)
 	}
 	else
 	{
-		wait(&status);
+		wait(&status);	/* Wait for child process to finish */
 		free_memory(arguments, path);
 	}
 
